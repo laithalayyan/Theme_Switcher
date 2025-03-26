@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { useTheme } from '../context/ThemeContext';
 import { Palette } from 'lucide-react';
 import { ColorDots } from './ColorDots';
