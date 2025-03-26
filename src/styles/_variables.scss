@@ -1,0 +1,39 @@
+@use 'sass:color';
+
+// Theme Colors
+$theme-light-primary: #f8fafc;
+$theme-light-secondary: #f1f5f9;
+$theme-light-accent: #3b82f6;
+$theme-light-accent-dark: color.adjust($theme-light-accent, $lightness: -10%);
+$theme-light-text: #1a1a1a;
+$theme-light-text-muted: #666666;
+
+$theme-dark-primary: #0f172a;
+$theme-dark-secondary: #1e293b;
+$theme-dark-accent: #60a5fa;
+$theme-dark-accent-dark: color.adjust($theme-dark-accent, $lightness: -10%);
+$theme-dark-text: #ffffff;
+$theme-dark-text-muted: #cccccc;
+
+// Bootstrap overrides
+$primary: $theme-light-accent;
+$secondary: $theme-light-secondary;
+
+// Theme-specific variables
+.light {
+  --bg-primary: #{$theme-light-primary};
+  --bg-secondary: #{$theme-light-secondary};
+  --accent: #{$theme-light-accent};
+  --accent-dark: #{$theme-light-accent-dark};
+  --text-primary: #{$theme-light-text};
+  --text-muted: #{$theme-light-text-muted};
+}
+
+.dark {
+  --bg-primary: #{$theme-dark-primary};
+  --bg-secondary: #{$theme-dark-secondary};
+  --accent: #{$theme-dark-accent};
+  --accent-dark: #{$theme-dark-accent-dark};
+  --text-primary: #{$theme-dark-text};
+  --text-muted: #{$theme-dark-text-muted};
+}
