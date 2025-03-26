@@ -1,6 +1,7 @@
 import { ThemeProvider, ThemeToggle } from './context/ThemeContext';
 import { ThemedComponent } from './components/ThemedComponent';
 import { useTheme } from './context/ThemeContext';
+import './styles/main.scss';
 
 function AppContent() { 
   const { theme } = useTheme();
