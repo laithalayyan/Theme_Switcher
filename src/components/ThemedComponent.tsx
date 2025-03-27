@@ -27,12 +27,6 @@ export function ThemedComponent() {
           </p>
         </div>
 
-        <p className="text-opacity-75">
-          Experience seamless theme switching with our React Context API implementation.
-          The interface automatically adapts to your preference, providing optimal
-          visibility and comfort in both light and dark environments.
-        </p>
-
         <ColorDots colors={colors} />
       </div>
     </div>
